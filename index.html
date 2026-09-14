@@ -1,210 +1,215 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 
-body {
-    margin: 0;
-    background: #69ad4b;
-}
+    <style>
+        body {
+            margin: 0;
+            background: #69ad4b;
+        }
 
-.scene {
-    position: relative;
-    width: 400px;
-    height: 600px;
-    margin: 30px auto;
-}
+        .scene {
+            position: relative;
+            width: 400px;
+            height: 600px;
+            margin: 30px auto;
+        }
 
-.rock {
-    position: absolute;
-    width: 280px;
-    height: 200px;
-    background: #aaa;
-    border-radius: 40%;
-    left: 70px;
-    bottom: 20px;
-}
+        .rock {
+            position: absolute;
+            width: 280px;
+            height: 200px;
+            background: #aaa;
+            border-radius: 40%;
+            left: 70px;
+            bottom: 20px;
+        }
 
-.girl {
-    position: absolute;
-    width: 250px;
-    height: 550px;
-    left: 75px;
-    bottom: 60px;
-}
+        .girl {
+            position: absolute;
+            width: 250px;
+            height: 550px;
+            left: 75px;
+            bottom: 60px;
+        }
 
-.hair {
-    position: absolute;
-    width: 150px;
-    height: 160px;
-    background: #4b382f;
-    border-radius: 45%;
-    left: 55px;
-    top: 20px;
-}
+        .hair {
+            position: absolute;
+            width: 150px;
+            height: 160px;
+            background: #4b382f;
+            border-radius: 45%;
+            left: 55px;
+            top: 20px;
+        }
 
-.bangs {
-    position: absolute;
-    width: 100px;
-    height: 50px;
-    background: #4b382f;
-    border-radius: 50%;
-    left: 55px;
-    top: 25px;
-    z-index: 3;
-    transform: rotate(-20deg);
-}
+        .bangs {
+            position: absolute;
+            width: 100px;
+            height: 50px;
+            background: #4b382f;
+            border-radius: 50%;
+            left: 55px;
+            top: 25px;
+            z-index: 3;
+            transform: rotate(-20deg);
+        }
 
-.head {
-    position: absolute;
-    width: 110px;
-    height: 125px;
-    background: #f3bd91;
-    border-radius: 50%;
-    left: 68px;
-    top: 35px;
-    z-index: 2;
-}
+        .head {
+            position: absolute;
+            width: 110px;
+            height: 125px;
+            background: #f3bd91;
+            border-radius: 50%;
+            left: 68px;
+            top: 35px;
+            z-index: 2;
+        }
 
-.eye {
-    position: absolute;
-    width: 15px;
-    height: 10px;
-    background: #333;
-    border-radius: 50%;
-    top: 55px;
-}
+        .eye {
+            position: absolute;
+            width: 15px;
+            height: 10px;
+            background: #333;
+            border-radius: 50%;
+            top: 55px;
+        }
 
-.eye1 {
-    left: 25px;
-}
+        .eye1 {
+            left: 25px;
+        }
 
-.eye2 {
-    right: 25px;
-}
+        .eye2 {
+            right: 25px;
+        }
 
-.nose {
-    position: absolute;
-    width: 15px;
-    height: 20px;
-    background: #e1b27d;
-    border-radius: 50%;
-    left: 50px;
-    top: 70px;
-}
+        .nose {
+            position: absolute;
+            width: 15px;
+            height: 20px;
+            background: #e1b27d;
+            border-radius: 50%;
+            left: 50px;
+            top: 70px;
+        }
 
-.mouth {
-    position: absolute;
-    width: 30px;
-    height: 15px;
-    border-bottom: 4px solid #914b45;
-    border-radius: 50%;
-    left: 40px;
-    top: 85px;
-}
+        .mouth {
+            position: absolute;
+            width: 30px;
+            height: 15px;
+            border-bottom: 4px solid #914b45;
+            border-radius: 50%;
+            left: 40px;
+            top: 85px;
+        }
 
-.neck {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    background: #edb589;
-    left: 103px;
-    top: 145px;
-}
+        .neck {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background: #edb589;
+            left: 103px;
+            top: 145px;
+        }
 
-.jacket {
-    position: absolute;
-    width: 170px;
-    height: 220px;
-    background: #e52f32;
-    border-radius: 65px;
-    left: 40px;
-    top: 165px;
-}
+        .jacket {
+            position: absolute;
+            width: 170px;
+            height: 220px;
+            background: #e52f32;
+            border-radius: 65px;
+            left: 40px;
+            top: 165px;
+        }
 
-.arm {
-    position: absolute;
-    width: 45px;
-    height: 170px;
-    background: #e52f32;
-    border-radius: 30px;
-}
+        .arm {
+            position: absolute;
+            width: 45px;
+            height: 170px;
+            background: #e52f32;
+            border-radius: 30px;
+        }
 
-.arm1 {
-    left: 20px;
-    top: 160px;
-    transform: rotate(30deg);
-}
+        .arm1 {
+            left: 20px;
+            top: 160px;
+            transform: rotate(30deg);
+        }
 
-.arm2 {
-    right: 20px;
-    top: 130px;
-    transform: rotate(-165deg);
-}
+        .arm2 {
+            right: 20px;
+            top: 130px;
+            transform: rotate(-165deg);
+        }
 
-.arm3 {
-    left: 20px;
-    top: 270px;
-    transform: rotate(-40deg);
-}
+        .arm3 {
+            left: 20px;
+            top: 270px;
+            transform: rotate(-40deg);
+        }
 
-.hand {
-    position: absolute;
-    width: 38px;
-    height: 32px;
-    background: #f3bd91;
-    border-radius: 50%;
-    right: 5px;
-    top: 120px;
-}
+        .hand {
+            position: absolute;
+            width: 38px;
+            height: 32px;
+            background: #f3bd91;
+            border-radius: 50%;
+            right: 5px;
+            top: 120px;
+        }
 
-.pants {
-    position: absolute;
-    width: 160px;
-    height: 160px;
-    background: #293e57;
-    border-radius: 30px;
-    left: 45px;
-    top: 365px;
-}
+        .pants {
+            position: absolute;
+            width: 160px;
+            height: 160px;
+            background: #293e57;
+            border-radius: 30px;
+            left: 45px;
+            top: 365px;
+        }
+    </style>
 
-</style>
 </head>
 
 <body>
 
-<div class="scene">
+    <div class="scene">
 
-    <div class="rock"></div>
+        <div class="rock"></div>
 
-    <div class="girl">
+        <div class="girl">
 
-        <div class="hair"></div>
+            <div class="hair"></div>
 
-        <div class="bangs"></div>
+            <div class="bangs"></div>
 
-        <div class="head">
-            <div class="eye eye1"></div>
-            <div class="eye eye2"></div>
-            <div class="nose"></div>
-            <div class="mouth"></div>
+            <div class="head">
+                <div class="eye eye1"></div>
+                <div class="eye eye2"></div>
+                <div class="nose"></div>
+                <div class="mouth"></div>
+            </div>
+
+            <div class="neck"></div>
+
+            <div class="jacket"></div>
+
+            <div class="arm arm1"></div>
+            <div class="arm arm2"></div>
+            <div class="arm arm3"></div>
+
+            <div class="hand"></div>
+
+            <div class="pants"></div>
+
         </div>
-
-        <div class="neck"></div>
-
-        <div class="jacket"></div>
-
-        <div class="arm arm1"></div>
-        <div class="arm arm2"></div>
-        <div class="arm arm3"></div>
-
-        <div class="hand"></div>
-
-        <div class="pants"></div>
 
     </div>
 
-</div>
-
 </body>
+
 </html>
